@@ -1,0 +1,134 @@
+@use "./utils/variables" as *;
+
+%card {
+  position: absolute;
+  width: 285px;
+  max-width: 500px;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 50px;
+
+  @media (min-width: $Desktop) {
+    margin-bottom: 0;
+  }
+
+  &__bg {
+    &-mobile {
+      width: 100%;
+      max-height: 240px;
+
+      @media (min-width: $Desktop) {
+        display: none;
+      }
+    }
+    &-desktop {
+      display: none;
+      width: 450px;
+      height: 100vh;
+
+      @media (min-width: $Desktop) {
+        display: block;
+      }
+    }
+  }
+
+  &__back {
+    @media (min-width: $Desktop) {
+      transform: translate(100px, -380px) scale(1.5);
+    }
+    @media (min-width: 1300px) {
+      transform: translate(300px, -380px) scale(1.5);
+    }
+    &-img {
+      @extend %card;
+      top: 33px;
+      right: 15px;
+
+      @media (min-width: $Tablet) {
+        right: 125px;
+      }
+    }
+
+    &-cvc {
+      position: absolute;
+      top: 101px;
+      right: 50px;
+      color: $White;
+      font-size: 0.8rem;
+
+      @media (min-width: $Tablet) {
+        right: 160px;
+      }
+    }
+  }
+
+  &__front {
+    @media (min-width: $Desktop) {
+      transform: translate(-30px, -780px) scale(1.5);
+    }
+    @media (min-width: 1300px) {
+      transform: translate(60px, -780px) scale(1.5);
+    }
+
+    &-img {
+      @extend %card;
+      top: 120px;
+      left: 15px;
+
+      @media (min-width: $Tablet) {
+        left: 125px;
+      }
+    }
+
+    &-number {
+      position: absolute;
+      top: 200px;
+      left: 35px;
+      color: $White;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+
+      @media (min-width: $Tablet) {
+        left: 145px;
+      }
+    }
+
+    &-name {
+      position: absolute;
+      top: 240px;
+      left: 35px;
+      color: $Light-Grayish-Violet;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+
+      @media (min-width: $Tablet) {
+        left: 145px;
+      }
+    }
+
+    &-date {
+      position: absolute;
+      top: 240px;
+      left: 235px;
+      color: $Light-Grayish-Violet;
+      font-size: 0.7rem;
+
+      @media (min-width: $Tablet) {
+        left: 345px;
+      }
+    }
+
+    &-logo {
+      position: absolute;
+      top: 140px;
+      left: 35px;
+      width: 50px;
+
+      @media (min-width: $Tablet) {
+        left: 145px;
+      }
+    }
+  }
+}

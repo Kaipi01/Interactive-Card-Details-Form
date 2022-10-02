@@ -1,0 +1,91 @@
+@use "./utils/variables" as *;
+
+.form {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &--hide {
+    display: none;
+  }
+
+  @media (min-width: 1300px) {
+    transform: translateX(50px);
+  }
+
+  &__input {
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 2px;
+    padding: 12px;
+    padding-left: 20px;
+    border: 1px solid $Light-Grayish-Violet;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    &:focus,
+    &:active {
+    }
+
+    &::placeholder {
+      color: $Light-Grayish-Violet;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__inputs-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    column-gap: 10px;
+
+    &-error {
+      grid-column: span 2;
+      order: 1;
+    }
+
+    &-input-wide {
+      grid-column: span 2;
+    }
+
+    &-error-wide {
+      grid-column-end: 5;
+      grid-column-start: 2;
+      text-align: left;
+
+      @media (min-width: 430px) {
+        grid-column-start: 3;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &-span2 {
+      grid-column: span 2;
+      order: -1;
+    }
+  }
+
+  &__error {
+    color: $Red;
+    font-size: 0.85rem;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__btn {
+    margin: 30px 0;
+  }
+}
