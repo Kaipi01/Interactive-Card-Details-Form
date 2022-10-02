@@ -1,0 +1,21 @@
+@use "./utils/variables" as *;
+@use "./components/button";
+@use "./layout/card";
+@use "./layout/complete";
+@use "./layout/form";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: $Font-Family;
+
+    @media (min-width: $Desktop) {
+      display: flex;
+      align-items: center;
+    }
+}
