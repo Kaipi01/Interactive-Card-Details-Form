@@ -1,0 +1,26 @@
+// Colors
+
+$Blue: hsl(249, 99%, 64%);
+$Dark-Pink: hsl(278, 94%, 30%);
+$Gradient: linear-gradient(
+  to bottom,
+  $Blue,
+  $Dark-Pink
+); //(active input border)
+$Red: hsl(0, 100%, 66%); //(input errors)
+$White: hsl(0, 0%, 100%);
+$Light-Grayish-Violet: hsl(270, 3%, 87%);
+$Dark-Grayish-Violet: hsl(279, 6%, 55%);
+$Very-Dark-Violet: hsl(278, 68%, 11%);
+$Dark-Violet: hsl(278, 77%, 22%);
+
+// Breakpoints
+
+$Large: 1300px;
+$Desktop: 1000px;
+$Tablet: 700px;
+
+// Font
+
+$Font-Family: "Space Grotesk", sans-serif;
+$Font-Size: 18px;
