@@ -24,8 +24,42 @@
     font-size: 1.2rem;
     font-weight: bold;
 
+    &--error {
+      border: 1px solid $Red;
+      outline-color: $Red;
+    }
+
     &:focus,
     &:active {
+      outline-color: $Blue;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $Light-Grayish-Violet;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    &::-moz-placeholder {
+      color: $Light-Grayish-Violet;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    &:-ms-input-placeholder {
+      color: $Light-Grayish-Violet;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    &::-ms-input-placeholder {
+      color: $Light-Grayish-Violet;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     &::placeholder {
@@ -39,7 +73,9 @@
   &__inputs-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, -webkit-max-content);
     grid-template-rows: repeat(4, max-content);
+    -moz-column-gap: 10px;
     column-gap: 10px;
 
     &-error {

@@ -12,10 +12,10 @@
 }
 
 body {
-    font-family: $Font-Family;
+  font-family: $Font-Family;
 
-    @media (min-width: $Desktop) {
-      display: flex;
-      align-items: center;
-    }
+  @media (min-width: $Desktop) {
+    display: flex;
+    align-items: center;
+  }
 }

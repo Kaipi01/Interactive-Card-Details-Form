@@ -90,6 +90,10 @@
       font-size: 1.2rem;
       letter-spacing: 1px;
 
+      &-gap {
+        margin: 4px;
+      }
+
       @media (min-width: $Tablet) {
         left: 145px;
       }
