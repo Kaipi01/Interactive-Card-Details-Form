@@ -153,8 +153,14 @@ function addZeroBeforeNumber(input, cardExp) {
 function showCompleteSection() {
   const formSection = document.querySelector(".form");
   const completeSection = document.querySelector(".complete");
+  const completeBtn = document.querySelector(".complete__btn");
+
   hideElement(formSection);
   showElement(completeSection);
+
+  completeBtn.addEventListener("click", () => {
+    document.location.reload();
+  });
 }
 
 function showElement(element) {
