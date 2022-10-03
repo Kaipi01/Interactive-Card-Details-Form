@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./scss/main.scss" />
+    >
+    <link rel="stylesheet" href="./scss/main.scss" >
     <script defer src="./main.js"></script>
     <title>Frontend Mentor | Interactive card details form</title>
   </head>
@@ -19,18 +19,18 @@
         class="card__bg-mobile"
         src="./images/bg-main-mobile.png"
         alt="background"
-      />
+      >
       <img
         class="card__bg-desktop"
         src="./images/bg-main-desktop.png"
         alt="background"
-      />
+      >
       <div class="card__back">
         <img
           class="card__back-img"
           src="./images/bg-card-back.png"
           alt="card back"
-        />
+        >
         <p class="card__back-cvc">000</p>
       </div>
 
@@ -39,12 +39,12 @@
           class="card__front-img"
           src="./images/bg-card-front.png"
           alt="card front"
-        />
+        >
         <img
           class="card__front-logo"
           src="./images/card-logo.svg"
           alt="card logo"
-        />
+        >
         <p class="card__front-number">0000 0000 0000 0000</p>
         <p class="card__front-name">jane applessed</p>
         <p class="card__front-date">
@@ -64,7 +64,7 @@
         type="text"
         name="card-name"
         id="card-name"
-      />
+      >
       <p class="form__error form__error--hide"></p>
 
       <label class="form__label" for="card-number">card number</label>
@@ -74,7 +74,7 @@
         type="text"
         name="card-number"
         id="card-number"
-      />
+      >
       <p class="form__error form__error--hide"></p>
 
       <div class="form__inputs-group">
@@ -85,7 +85,6 @@
           >exp. date (mm/yy)
         </label>
         <input
-          placeholder="MM"
           class="form__input"
           type="number"
           name="card-exp-month"
@@ -93,11 +92,10 @@
           min="1"
           max="12"
           step="1"
-          aria-placeholder="month"
-        />
+          placeholder="MM"
+        >
         <p class="form__error form__inputs-group-error form__error--hide"></p>
         <input
-          placeholder="YY"
           class="form__input"
           type="number"
           name="card-exp-year"
@@ -105,10 +103,8 @@
           min="0"
           max="99"
           step="1"
-          aria-placeholder="year"
-        />
-        <!-- <p class="form__error form__error--hide">Can't be blank</p> -->
-
+          placeholder="YY"
+        >
         <label class="form__label form__label-span2" for="card-cvc">cvc</label>
         <input
           placeholder="e.g. 123"
@@ -116,10 +112,7 @@
           type="text"
           name="card-cvc"
           id="card-cvc"
-        />
-        <!-- <p class="form__error form__inputs-group-error form__error--hide">
-          Can't be blank
-        </p> -->
+        >
         <p
           class="form__error form__inputs-group-error-wide form__error--hide"
         ></p>
@@ -132,7 +125,7 @@
         class="complete__img"
         src="./images/icon-complete.svg"
         alt="complete icon"
-      />
+      >
       <p class="complete__info">thank you!</p>
       <p class="complete__status">We've added your card details</p>
       <button class="button complete__btn">Continue</button>
